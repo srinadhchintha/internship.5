@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products - ShopSmart</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Amazon</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Product</a>
+      <a href="cart.html">Cart</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="menu-icon">&#9776;</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Our Products</h1>
+      <p>Check out our exclusive products. Quality, style, and satisfaction guaranteed!</p>
+    </div>
+    <div class="hero-image">
+      <img src="product.jpg" alt="Products Banner">
+    </div>
+  </section>
+
+  <section style="padding: 2rem 5%;">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Featured Products</h2>
+    <div class="product-grid">
+
+      <!-- Existing 15 Products (IDs 1 to 15) -->
+      <!-- ... [your previously added 15 products] ... -->
+
+      <!-- Product 16 - Home Accessory (Wall Clock) -->
+      <div class="product-card" data-id="16" data-name="Vintage Wall Clock" data-price="24.99">
+        <img src="wall clock.webp" alt="Wall Clock">
+        <h3>Vintage Wall Clock</h3>
+        <p>$24.99</p>
+        <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <!-- Product 17 - Men's T-shirt -->
+      <div class="product-card" data-id="17" data-name="Men's Cotton T-shirt" data-price="12.99">
+        <img src="t-shit.webp" alt="Men T-shirt">
+        <h3>Men's Cotton T-shirt</h3>
+        <p>$12.99</p>
+        <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <!-- Product 18 - Women's Dress -->
+      <div class="product-card" data-id="18" data-name="Women's Summer Dress" data-price="29.99">
+        <img src="women.webp" alt="Women's Dress">
+        <h3>Women's Summer Dress</h3>
+        <p>$29.99</p>
+        <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <!-- Product 19 - Smart LED TV -->
+      <div class="product-card" data-id="19" data-name="Smart LED TV 43 inch" data-price="299.99">
+        <img src="https://m.media-amazon.com/images/I/71tIrZqybrL._SL1500_.jpg" alt="Smart LED TV">
+        <h3>Smart LED TV 43"</h3>
+        <p>$299.99</p>
+        <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <!-- Product 20 - Sofa Set -->
+      <div class="product-card" data-id="20" data-name="Modern Sofa Set (3+2)" data-price="499.99">
+        <img src="sofa.jpg" alt="Sofa Set">
+        <h3>Modern Sofa Set (3+2)</h3>
+        <p>$499.99</p>
+        <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <!-- Product 21 - Microwave Oven -->
+      <div class="product-card" data-id="21" data-name="Microwave Oven 20L" data-price="89.99">
+        <img src="microwave.webp" alt="Microwave Oven">
+        <h3>Microwave Oven 20L</h3>
+        <p>$89.99</p>
+        <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <!-- Product 22 - Amazon Fire TV Stick -->
+<div class="product-card" data-id="22" data-name="Amazon Fire TV Stick" data-price="39.99">
+  <img src="https://m.media-amazon.com/images/I/51Da2Z+FTFL._SL1000_.jpg" alt="Amazon Fire TV Stick">
+  <h3>Amazon Fire TV Stick</h3>
+  <p>$39.99</p>
+  <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+</div>
+
+<!-- Product 23 - Smartphone -->
+<div class="product-card" data-id="23" data-name="Android Smartphone 128GB" data-price="199.99">
+  <img src="https://m.media-amazon.com/images/I/71v2jVh6nIL._SL1500_.jpg" alt="Smartphone">
+  <h3>Android Smartphone 128GB</h3>
+  <p>$199.99</p>
+  <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+</div>
+
+<!-- Product 24 - Laptop -->
+<div class="product-card" data-id="24" data-name="Laptop 15.6' FHD" data-price="549.99">
+  <img src="laptop.webp" alt="Laptop">
+  <h3>Laptop 15.6" FHD</h3>
+  <p>$549.99</p>
+  <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+</div>
+
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
